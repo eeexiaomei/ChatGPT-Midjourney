@@ -10,7 +10,9 @@ import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
-import QQIcon from "../icons/qq.png";
+import QQIcon from "../icons/qq.svg";
+// import ShangIcon from "";
+// import WeChatIcon from "";
 
 import Locale from "../locales";
 
@@ -21,8 +23,10 @@ import {
   MIN_SIDEBAR_WIDTH,
   NARROW_SIDEBAR_WIDTH,
   Path,
+  QQ_URL,
   REPO_URL,
-  QQ_URL
+  // SHANG_URL,
+  // WECHAT_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -122,9 +126,7 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>ChatGPT-Midjourney</div>
-        <div className={styles["sidebar-sub-title"]}>
-          Your own AI assistant.
-        </div>
+        <div className={styles["sidebar-sub-title"]}></div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
         </div>
@@ -175,9 +177,14 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
+          {/*<div className={styles["sidebar-action"]}>
+            <a href={REPO_URL} target="_blank">
+              <IconButton icon={<GithubIcon />} shadow />
+            </a>
+          </div>*/}
           {/*<div className={styles["sidebar-action"]}>*/}
-          {/*  <a href={REPO_URL} target="_blank">*/}
-          {/*    <IconButton icon={<GithubIcon />} shadow />*/}
+          {/*  <a href={WECHAT_URL} target="_blank">*/}
+          {/*    <IconButton icon={<WeChatIcon />} shadow />*/}
           {/*  </a>*/}
           {/*</div>*/}
           <div className={styles["sidebar-action"]}>
@@ -185,6 +192,11 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<QQIcon />} shadow />
             </a>
           </div>
+          {/*<div className={styles["sidebar-action"]}>*/}
+          {/*  <a href={SHANG_URL} target="_blank">*/}
+          {/*    <IconButton icon={<ShangIcon />} shadow />*/}
+          {/*  </a>*/}
+          {/*</div>*/}
         </div>
         <div>
           <IconButton

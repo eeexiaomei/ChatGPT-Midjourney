@@ -1,6 +1,7 @@
 export const OWNER = "Licoy";
 export const REPO = "ChatGPT-Midjourney";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
+export const QQ_URL = `http://rx92kqodc.bkt.gdipper.com/Screenshot_20230704_110020_com.tencent.mobileqq%281%29.png`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
 export const FETCH_COMMIT_URL = `https://api.github.com/repos/${OWNER}/${REPO}/commits?per_page=1`;

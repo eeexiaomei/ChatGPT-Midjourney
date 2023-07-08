@@ -22,7 +22,7 @@ import {
   NARROW_SIDEBAR_WIDTH,
   Path,
   REPO_URL,
-  QQ_URL,
+  QQ_URL
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
